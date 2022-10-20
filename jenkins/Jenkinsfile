@@ -8,7 +8,7 @@ pipeline {
             }
         }
         stage('Test') {
-            parallel {
+            steps {
                 sh 'mvn test'
             }
             post {
